@@ -289,11 +289,6 @@
   ],
   "gateways": [
     {
-      "platform": "slack",
-      "name": "Slack \u2014 OyaAI-Testing",
-      "is_active": true
-    },
-    {
       "platform": "gmail",
       "name": "Gmail \u2014 mk@oya.ai",
       "is_active": true
