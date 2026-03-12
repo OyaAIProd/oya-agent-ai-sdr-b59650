@@ -144,9 +144,7 @@ def do_get_company(headers, organization_id):
     if not organization_id or not organization_id.strip():
         return {"error": "organization_id is required for get_company"}
     org_id = organization_id.strip()
-    data = api_get(headers, f"organizations/{org_id}", params={
-        "projection": "(id,localizedName,vanityName,logoV2,description,staffCountRange)"
-    })
+    data = api_get(headers, f"organizations/{org_id}")
     return {
         "id": data.get("id", ""),
         "name": data.get("localizedName", ""),

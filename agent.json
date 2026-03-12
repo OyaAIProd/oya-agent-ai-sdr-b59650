@@ -320,20 +320,20 @@
       "is_active": true
     },
     {
-      "name": "Check Replies",
-      "description": "",
-      "schedule_human": "0 */3 9-18 * * 1-5",
-      "schedule_cron": "0 */3 9-18 * * 1-5",
-      "prompt": "Check Gmail for new replies to outreach emails in the last 3 hours.\nFor each reply:\n1. Classify as: interested, not interested, out of office, or question\n2. Update the lead's status in Google Sheets\n3. If interested \u2192 immediately notify Slack with lead details\n4. If question \u2192 draft a helpful response\n",
-      "output_channel": "",
-      "is_active": true
-    },
-    {
       "name": "Weekly Pipeline Report",
       "description": "",
       "schedule_human": "0 17 * * 5",
       "schedule_cron": "0 17 * * 5",
       "prompt": "Generate a weekly SDR report and post to Slack:\n- New leads found this week\n- Emails sent\n- Reply rate\n- Warm leads (interested replies)\n- Pipeline value\nPull data from Google Sheets.\n",
+      "output_channel": "",
+      "is_active": true
+    },
+    {
+      "name": "Check Replies",
+      "description": "",
+      "schedule_human": "0 */3 9-18 * * 1-5",
+      "schedule_cron": "0 */3 9-18 * * 1-5",
+      "prompt": "Check Gmail for new replies to outreach emails in the last 3 hours.\nFor each reply:\n1. Classify as: interested, not interested, out of office, or question\n2. Update the lead's status in Google Sheets\n3. If interested \u2192 immediately notify Slack with lead details\n4. If question \u2192 draft a helpful response\n",
       "output_channel": "",
       "is_active": true
     }
